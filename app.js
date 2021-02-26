@@ -13,13 +13,13 @@ const data = [
     gender: 'female',
     lookingfor: 'male',
     location: 'Rotterdam',
-    image: 'https://randomuser.me/api/portraits/women/33.jpg'
+    image: 'https://randomuser.me/api/portraits/women/82.jpg'
   },
   {
     name: 'Bob Zandstra',
     age: 39,
     gender: 'male',
-    lookingfor: 'female',
+    lookingfor: 'male',
     location: 'Utrecht',
     image: 'https://randomuser.me/api/portraits/men/65.jpg'
   }
@@ -42,7 +42,11 @@ function nextProfile() {
       <li class="list-group-item">Preference: ${currentProfile.gender} looking for a ${currentProfile.lookingfor}</li>
     </ul>
   `;
-}
+
+  document.getElementById('imageDisplay').innerHTML = `<img src="${currentProfile.image}">`;
+} 
+
+
 
 // Profile iterator
 function profileIterator(profiles) {
