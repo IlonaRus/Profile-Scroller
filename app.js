@@ -22,7 +22,31 @@ const data = [
     lookingfor: 'male',
     location: 'Utrecht',
     image: 'https://randomuser.me/api/portraits/men/65.jpg'
-  }
+  },
+  {
+    name: 'Anna Boonstra',
+    age: 23,
+    gender: 'female',
+    lookingfor: 'male',
+    location: 'Eindhoven',
+    image: 'https://randomuser.me/api/portraits/women/99.jpg'
+  },
+  {
+    name: 'Mark Tadema',
+    age: 30,
+    gender: 'male',
+    lookingfor: 'female',
+    location: 'Leeuwarden',
+    image: 'https://randomuser.me/api/portraits/men/76.jpg'
+  },
+  {
+    name: 'Chantal Visser',
+    age: 45,
+    gender: 'female',
+    lookingfor: 'female',
+    location: 'Amsterdam',
+    image: 'https://randomuser.me/api/portraits/women/13.jpg'
+  },
 ];
 
 const profiles = profileIterator(data);
